@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#9a1d86, #1595be);
+    font-weight: bold;
+    text-align: center;
+    
+    }
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00CB9C;
+      width: 100%;
+      border-radius: 20px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 999px;
+    }
+    #logo{
+        height: 50px;
+        width: 50px;
+        background-color: #FFFFFF;
+        margin-left: 10px;
+        padding:0;
+        border-radius: 40px;
+    }
+    #warn{
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        padding:0;
+    }
+    .text{
+        color: #00000;
+    }
+    .popup{
+        position: absolute;
+        height:200px ;
+        width: 350px;
+        margin-right:50px;
+    }
+    
+    #dwnld{
+        background-color: #6C6C6C;
+        left: 11%;
+        top: 50%;
+        position: absolute;
+        border-radius: 15px;
+        padding: 10px;
+        height: 200px;
+        width: 400px;
+        z-index: 999px;
+    }
+    .btn{
+      background-color: DodgerBlue;
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+
+    }
+    :root {
+  --animate-delay: 5s;
+}
+
+    #tch{
+        margin-left: 20px;
+        position: center;
+        font-family: Arial;
+    }
+    .live{
+        font-size: 20px;
+        font-family: Arial;
+        margin-right: 10px;
+        color: red;
+      animation: blinker 1s linear infinite;
+    }
+
+ @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+    }
+    
+    #update{
+        font-size: 15px;
+        margin-right: 0px;
+        letter-spacing: 2px;
+        font-family: Sans-Serif;
+        color: #D22F91;
+    }
+    .des{
+        font-size: 25px;
+        font-family: Arial;
+    }
+    .ftr{
+      justify-content: space-between;
+      align-items: center;
+      width: ;
+      border-radius: 20px;
+      background-color: #00CB9C;
+      padding: 5px 5px;
+      text-align: center;
+      position: center;
+    }
+    
+    #p1{
+        cursor: none;
+    }
+    
+    #fb{
+        color: #0087FF;
+        text-decoration: none;
+    }
+    #yt{
+        color: #FF1600;
+        text-decoration: none;
+    }
+    #visi{
+        position: center;
+        border-radius: 10px;
+    }
+    .div1{
+        text-align: center;
+        border: solid green;
+        border-radius: 20px;
+        width: 300px;
+        margin: auto;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .player{
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+    .wrapper{
+      border: 1px solid transparent;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: #ddd;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    
+    .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border:2px solid 	#FFFAFA;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    border-radius:190px;
+    }
+    
+    .now-playing {
+    font-size: 1rem;
+    }
+    
+    .track-name {
+    font-size: 2.5rem;
+    }
+    
+    .track-artist {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    }
+    
+    .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+    .active{
+        color: black;
+    }
+    
+    .repeat-track,
+    .random-track,
+    .playpause-track,
+    .prev-track,
+    .next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    }
+    
+    .repeat-track:hover,
+    .random-track:hover,
+    .playpause-track:hover,
+    .prev-track:hover,
+    .next-track:hover {
+    opacity: 1.0;
+    }
+    
+    .slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #83A9FF;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    }
+    
+    .seek_slider::-webkit-slider-thumb,
+    .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #3774FF;
+    cursor: grab;
+    border-radius: 100%;
+    }
+    
+    .seek_slider:hover,
+    .volume_slider:hover {
+    opacity: 1.0;
+    }
+    
+    .seek_slider {
+    width: 60%;
+    }
+    
+    .volume_slider {
+    width: 30%;
+    }
+    
+    .current-time,
+    .total-duration {
+    padding: 10px;
+    }
+    
+    i.fa-volume-down,
+    i.fa-volume-up {
+    padding: 10px;
+    }
+    
+    i,
+    i.fa-play-circle,
+    i.fa-pause-circle,
+    i.fa-step-forward,
+    i.fa-step-backward,
+    p {
+    cursor: pointer;
+    }
+    .randomActive{
+        color: black;
+    }
+    .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+    }
+    .loader {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader .stroke{
+        background: #f1f1f1;
+        height: 150%;
+        width: 10px;
+        border-radius: 50px;
+        margin: 0 5px;
+        animation: animate 1.4s linear infinite;
+    }
+      @keyframes animate {
+        50% {
+          height: 20%;
+          background: #4286f4;
+        }
+    
+        100% {
+          background: #4286f4;
+          height: 100%;
+        }
+      }
+      .stroke:nth-child(1){
+          animation-delay: 0s;
+      }
+      .stroke:nth-child(2){
+        animation-delay: 0.3s;
+    }
+    .stroke:nth-child(3){
+        animation-delay: 0.6s;
+    }
+    .stroke:nth-child(4){
+        animation-delay: 0.9s;
+    }
+    .stroke:nth-child(5){
+        animation-delay: 0.6s;
+    }
+    .stroke:nth-child(6){
+        animation-delay: 0.3s;
+    }
+    .stroke:nth-child(7){
+        animation-delay: 0s;
+    }
+    

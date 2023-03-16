@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Online Live Free Radio by Ahmed Sumon</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="animate__animated animate__fadeInBottomLeft">
+    
+        <header class="site-header">
+            <img class="animate__animated animate__rubberBand animate__slow	2s animate__infinite" id="logo" src="https://i.ibb.co/WyWrqYy/20220423-084958.png" alt="tech-atiqur-Logo" /> 
+            <h1 class="animate__animated animate__tada animate__infinite animate__slow	2s " id="tch">TecH AtiquR <br/><span id="update" class="live">New Radio Station Added</span></h1>
+        <h1 class="live">Live Now</h1>
+        </header>
+       <div>
+           
+        <p id="p1" class="des">Online Radio By Ahmed Sumon. It's totally free. <br />
+        In future I will add more radio stations here.
+        <br />
+        Thanks a lot for visiting.</p>
+        </div>
+         <div class="popup"><div id="dwnld"class="animate__animated">
+             <img class="animate__animated animate__rubberBand animate__slow	2s animate__infinite"  id="warn" src="https://i.ibb.co/SnpZp02/5a81af7d9123fa7bcc9b0793.png" alt="5a81af7d9123fa7bcc9b0793" border="0">
+            <h2 class="text">A new version is available.</h2>
+            <p class="text">Our new app has released with some new features and new look. Please, download and install it by clicking download button.</p>
+            <div
+                class="animate__animated animate__rubberBand animate__slow	2s animate__infinite" >
+            <a href="./Live_Radio_by_Sumon_v2.apk"><button class="btn"><i class="fa fa-download"></i> Download Now</button>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+   <div class="player">
+       <div class="wrapper">
+           <div class="details">
+               <div class="now-playing">PLAYING x OF y</div>
+               <div class="track-art"></div>
+               <div class="track-name">Track Name</div>
+               <div class="track-artist">Track Artist</div>
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+               <div class="random-track" onclick="randomTrack()">
+                   <i class="fas fa-random fa-2x" title="random"></i>
+               </div>
+               <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                </div>
+           </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+       </div>
+   </div>
+   <center class="div1">
+       <a class="link"> 
+<img id="visi" src="https://hitwebcounter.com/counter/counter.php?page=8368233&style=0009&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+    <h3>TOTAL VISITS TODAY</h3>
+   </center>
+   
+   <script type="text/javascript" async src="//l.getsitecontrol.com/5wvg6zrw.js"></script>
+   
+   
+   <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "647913425634590");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    
+    
+   <footer class="ftr">
+      <h2>Please Follow My Facebook Page and subscribe My Youtube Chennel. Thanks again for visiting my site.</h2>
+      <h3><a class="fa fa-facebook" id="fb" href="https://m.facebook.com/technical.atiqur"> TecH AtiquR</a></h3>
+      <h3><a class="fa fa-youtube" id="yt" href="https://m.youtube.com/techatiqur">  TecH AtiquR</a></h3>
+      <br />
+      <p id="p1">©2023 All rights reserved.</p>
+        
+   </footer>
+</body>
+</html>
